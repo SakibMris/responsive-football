@@ -54,7 +54,6 @@ margin-top: 100px;
 padding: 10px;
 }
 .players{
-    width: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 45px;
@@ -65,11 +64,11 @@ padding: 10px;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 0 5px 2px gray;
-    padding: 30px;
+    padding: 20px;
 }
 .player-image img{
-    width: 300px;
-    height: 256px;
+    width: 280px;
+    height: 250px;
     border-radius: 10px;
 }
 /*------------------------------------
@@ -162,12 +161,14 @@ Transform, Hover and Transition Effect
 }
 .award{
     padding: 20px;
-    width: 280px;
+    width: 300px;
+    border-radius: 10px;
     box-shadow: 0 0 5px 2px whitesmoke;
 }
 .copa-award img{
-    width: 300px;
-    height: 250px;
+    width: 270px;
+    height: 220px;
+    border-radius: 10px;
 }
 /*------------------------------------
 Transform, Hover and Transition Effect
@@ -226,6 +227,9 @@ Media Queries
     .players{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+     width: 300px;
     }
     .container-3{
         width: 100%;
