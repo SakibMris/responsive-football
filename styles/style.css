@@ -229,7 +229,8 @@ Media Queries
         grid-template-columns: repeat(1,1fr);
     }
     .player{
-     width: 300px;
+     width: 280px;
+     background-color: lightcyan;
     }
     .container-3{
         width: 100%;
@@ -275,6 +276,7 @@ Media Queries
     }
     .award{
         border-radius: 10px;
+        width: 280px;
     }
     .award img{
         border-radius: 10px;
