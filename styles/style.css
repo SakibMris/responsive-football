@@ -54,6 +54,7 @@ margin-top: 100px;
 padding: 10px;
 }
 .players{
+    width: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 45px;
@@ -64,7 +65,7 @@ padding: 10px;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 0 5px 2px gray;
-    padding: 50px;
+    padding: 30px;
 }
 .player-image img{
     width: 300px;
@@ -160,7 +161,8 @@ Transform, Hover and Transition Effect
     padding: 20px;
 }
 .award{
-    padding: 30px;
+    padding: 20px;
+    width: 280px;
     box-shadow: 0 0 5px 2px whitesmoke;
 }
 .copa-award img{
@@ -206,6 +208,7 @@ i:hover {
 }
 /*-----------
 Media Queries
+   Mobile 
 -------------*/
 @media only screen and (max-width:488px) {
     .container-1{
@@ -215,19 +218,18 @@ Media Queries
     }
     .banner-1 img{
         width: 330px;
-        height: 220px;
+        height: 240px;
     }
     .container-2{
         width: 100%;
-
     }
     .players{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
     .container-3{
         width: 100%;
-        height: 700px;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -235,41 +237,51 @@ Media Queries
         margin-left: 0px;
     }
     .banner-2 img{
-        width: 300px;
-        height: 200px;
+        width: 330px;
+        height: 250px;
     }
     .container-4{
         width: 100%;
-        height: 550px;
+        height: 480px;
+        position: relative;
     }
     .background img{
         width: 100%;
-        height: 350px;
-        position: relative;
+        height: 250px;
     }
     .winner-title{
-        position: absolute;
-        top: 450px;
+        font-size: 12px;
+        position:absolute;
+        top: 350px;
         left: 0px;
-        font-size: 10px;
     }
     .winner-title:hover{
-        transform:none;
-        transition: color 2s ease;
+        transform: none;
         color: #E02C6D;
+        transition: color 2s ease;
     }
     .container-5{
         width: 100%;
         height: 100%;
     }
     .copa-award{
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 30px;
+        grid-row-gap: 20px;
+    }
+    .award{
+        border-radius: 10px;
+    }
+    .award img{
+        border-radius: 10px;
+        width: 250px;
+        height: 150px;
     }
     footer{
         text-align: center;
     }
-    
+    .football-logo img{
+        width: 250px;
+        height: 70px;
+    }
 }
